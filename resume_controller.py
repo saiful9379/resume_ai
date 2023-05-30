@@ -94,11 +94,11 @@ if __name__ == "__main__":
 
 
     configuration = {
-      "config":"/content/drive/MyDrive/resume_ai/resume_extractor/configs/finetune_funsd_ee_spade.yaml",
-      "pretrained_model_file": "/content/drive/MyDrive/resume_ai/resume_extractor/train_model/epoch=199-last.pt"
+      "config":"./configs/finetune_funsd_ee_spade.yaml",
+      "pretrained_model_file": "./resume_extractor/train_model/epoch=199-last.pt"
     }
-    class_path = "/content/drive/MyDrive/resume_ai/resume_extractor/datasets/funsd_spade/class_names.txt"
-    default_config = "/content/drive/MyDrive/resume_ai/resume_extractor/configs/default.yaml"
+    class_path = "./resume_extractor/datasets/funsd_spade/class_names.txt"
+    default_config = "./resume_extractor/configs/default.yaml"
     cfg = get_config(default_conf_file=default_config, config_data = configuration)
 
 
