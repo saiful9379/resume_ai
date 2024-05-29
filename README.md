@@ -1,17 +1,21 @@
 # Resume AI
+Introducing Smart Resume AI: Revolutionizing Resume Sorting and Job Matching
 
-Resume AI module is the automate system to parse your resume and extracted it as structure format of the information
+Smart Resume AI is a cutting-edge LM BERT Based with an Extraction module. we have tried to solve problems using our approach till now not introducing the LLM model.
+The resume AI module is the automated system to parses your resume and extracts it as structured format of the information
+
+![Alt text](./process_flow/resume_parser.drawio.png)
 
 # 1. Setup Process [CPU]
 
-Donwload Anaconda for linux from [Here](https://www.anaconda.com/download#downloads)
+Download Anaconda for Linux from [Here](https://www.anaconda.com/download#downloads)
 
 ## Install Anaconda [Linux or Mac]
-Installization guide line here the link [Here](https://www.hostinger.com/tutorials/how-to-install-anaconda-on-ubuntu/)
+Installation guideline here the link [Here](https://www.hostinger.com/tutorials/how-to-install-anaconda-on-ubuntu/)
 
 ## Environment Create
 
-Run this command into terminal,
+Run this command into the terminal,
 
 ```
 conda create -n resume_ai python=3.8
@@ -33,7 +37,7 @@ pip install -r requirements.txt
 pip install PyMuPDF==1.18.15
 ```
 
-__N.B : if torch and torchvision raise any version issue then set it below given this version__
+__N.B: if torch and torchvision raise any version issue then set it below given this version__
 
 ```
 torch==1.9.0
@@ -41,7 +45,7 @@ torchvision==0.10.0
 
 ```
 
-## Model and Data path Directory
+## Model and Data Path Directory
 
 Download the Model from this [link](https://drive.google.com/drive/folders/103Papg7ng83yqC7eApRoy2fs71jsebjX?usp=sharing)
 
@@ -72,9 +76,9 @@ Check output into logs folder.
 
 if you want to run this module into colab follow the below instruction
 
-1. Upload the project folder into google drive
+1. Upload the project folder into Google Drive
 2. upload the ```resume_ai.ipynb``` file into colab
-3. run all the code step which have ````resume_ai.ipynb``` file.
+3. run all the code steps that have ````resume_ai.ipynb``` file.
 
 
 # 3. Setup Process [GPU]
@@ -93,18 +97,18 @@ Ubuntu Docker install
  sudo apt-get install docker.io
  ```
  Mac
- please check the mac instruction i am unknown about this. please follow this link instruction.
+ please check the mac instructions i am unknown of this. please follow this link instructions.
  ```
  https://medium.com/crowdbotics/a-complete-one-by-one-guide-to-install-docker-on-your-mac-os-using-homebrew-e818eb4cfc3
  ```
  
 __2. Build Docker file__ 
-Open termianl inside ```Resume-AI``` folder
+Open terminal inside ```Resume-AI``` folder
 Build Docker
 ```
 sudo docker build -t resume_ai:20230607 .
 ```
-For building docker image it take some times. 
+For building a docker image it takes some time. 
 Check Docker images
 ```
 sudo docker image
@@ -121,13 +125,13 @@ __3. Run docker image__
 ```
 sudo docker run -it 2581d97050d1 /bin/bash
 ```
-or Mount local path directory
+or Mount the local path directory
 
 ```
 sudo docker run -it -v /home/saiful/Desktop/Resume-AI-main:/home 2581d97050d1 /bin/bash
 cd home
 ```
-N.B : ```/home/saiful/Desktop/Resume-AI-main``` here this is your project path directory
+N.B : ```/home/saiful/Desktop/Resume-AI-main```Here this is your project path directory
 
 Run,
 ```
